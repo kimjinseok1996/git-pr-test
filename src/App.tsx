@@ -8,6 +8,7 @@ const App: React.FC = () => {
         Clean architecture with ESLint, Prettier, and absolute imports setup.
       </p>
       <p>pr test 1</p>
+      <p>pr test 2</p>
     </div>
   );
 };
