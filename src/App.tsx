@@ -9,6 +9,7 @@ const App: React.FC = () => {
       </p>
       <p>pr test 1</p>
       <p>pr test 2</p>
+      <p>pr test 3</p>
     </div>
   );
 };
