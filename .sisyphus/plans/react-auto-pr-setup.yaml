@@ -1,0 +1,26 @@
+plan_name: react-auto-pr-setup
+created: Wed Mar 04 2026
+
+tasks:
+  - [ ] Task 1: Create React + TypeScript project with Vite, ESLint, Prettier, and folder structure (src/components, src/pages, src/hooks, src/utils)
+  - [ ] Task 2: Initialize Git, create initial commit, configure remote, push to main, create and push develop branch
+  - [ ] Task 3: Set up husky, commitlint with conventional commit rules (feat, fix, chore, refactor, docs, style)
+  - [ ] Task 4: Create autopr script that generates commit messages from git diff, commits, pushes, and creates GitHub PR with AI-generated content
+  - [ ] Task 5: Create .github/pull_request_template.md with dynamic placeholders for Summary, Changes, Files Changed, Test Instructions
+
+parallelization:
+  group_1:
+    - Task 1
+  group_2:
+    - Task 2
+  group_3:
+    - Task 3
+    - Task 5
+  group_4:
+    - Task 4
+
+dependencies:
+  - Task 2 depends on Task 1 (need project files first)
+  - Task 3 depends on Task 2 (need git initialized)
+  - Task 4 depends on Task 2, Task 3 (need git + commit tooling)
+  - Task 5 independent (can run parallel with Task 3)
