@@ -12,6 +12,7 @@ const App: React.FC = () => {
       <p>pr test 3</p>
       <p>pr test 4</p>
       <p>pr test 5</p>
+      <p>pr test 6</p>
     </div>
   );
 };
